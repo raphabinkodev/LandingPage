@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #fcf1cc;
+}
+header{
+    padding: 10px 2%;
+}
+.clear{
+    clear: both;
+}
+.container{
+    width: 100%;
+    max-width: 1560px;
+    margin: 0 auto; /* Para centralizar o campo*/
+}
+.logo1{
+    float: left;
+    width: 160px;
+    height: 60px;
+    background-color: black;
+    background-size: 100% 100%;
+
+}
+.logo2{
+    float: right;
+    width: 160px;
+    height: 60px;
+    background-color: black;
+    background-size: 100% 100%;
+}
+.container .logo1, .logo2 p{
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: bold;
+}
+section.cover-form{
+    width: 100%;
+}
+.bg{
+    background-image: url(../imagens/bg-form.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+}
+.container-form{
+    float: right;
+    width: 400px;
+    height: 93.33%;
+    margin: 20px 40px;
+    background-color: rgba(234, 236, 239, 0.4);
+}
+.container-form h2{
+    background-color: rgba(234, 236, 239, 0.7);
+    font-weight: normal;
+    padding: 20px 15px;
+}
+.container-form form{
+    padding: 20px;
+}
+.input-container{
+    margin-top: 20px;
+}
+.input-container span{
+    font-size: 18px;
+    color: #525252;
+}
+.input-container input[type=text]{
+    margin-top: 6px;
+    width: 100%;
+    height: 40px;
+    border: 1px solid #cccccc;
+    line-height: 45px; /*Serve para posicionar o que escrevemos dentro*/
+    padding-left: 10px;
+
+}
+form .input-submit{
+    margin-top: 36px;
+    text-align: center;
+}
+form input[type=submit]{
+    width: 280px;
+    height: 55px;
+    color: white;
+    font-size: 30px;
+    background-color: #033C50;
+    display: inline-block;  
+    border: 0;
+    cursor: pointer;
+}
+section.chamada{
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+section.chamada .container{
+    background-color: #cfbd82;
+    padding: 30px 0;
+}
+.container p{
+    margin-top: 10px;
+}
+
+.flex-mosaico{
+    margin-top: 1px;
+    display: flex;
+}
+.mosaico1{
+    width: 65%;
+}
+.mosaico1 img {
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    max-height: 400px;
+}
+.mosaico1-2{
+    text-align: justify;
+    vertical-align: middle;
+    background-color: rgba(234, 236, 239, 0.2);
+    padding: 20px;
+    width: 35%;
+}
+.chamada-2{
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+.chamada-2 .container{
+    background-color: #cfbd82;
+    padding: 30px 0;
+}
+.chamada-2 .container p{
+    text-decoration: underline;
+}
+footer{
+    padding: 20px 0;
+    text-align: center;
+}
+footer p{
+    margin-top: 10px;
+    font-size: 18px;
+}
+.rodape-logo{
+    display: inline-block;
+    text-align: center;
+    width: 160px;
+    height: 60px;
+    background-color: black;
+    background-size: 100% 100%;
+    margin-top: 20px;
+}
+.container .rodape-logo p{
+    color: white;
+    padding: 16px;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+@media screen and (max-width:768px){
+    .container .container-form{
+        float: none;
+        display: block;
+        margin: 20px auto;
+    }
+    .flex-mosaico{
+        display: block;
+    }
+    .mosaico1{
+        width: 100%;
+    }
+    .mosaico1-2{
+        width: 100%;
+    }
+}
+/*@media screen and (max-width: 500px){
+    header{
+        text-align: center;
+    }
+    .logo1, .logo2{
+        display: inline-block;
+        float: none;
+    }
+}*/
